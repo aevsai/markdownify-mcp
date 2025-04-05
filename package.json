@@ -11,6 +11,9 @@
     "mcp-markdownify-server-url": "dist/index.js"
   },
   "files": [
+    "setup.sh",
+    "uv.lock",
+    "pyproject.toml",
     "dist"
   ],
   "scripts": {
