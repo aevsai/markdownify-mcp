@@ -47,27 +47,17 @@ export function createServer() {
           case tools.YouTubeToMarkdownTool.name:
           case tools.BingSearchResultToMarkdownTool.name:
           case tools.WebpageToMarkdownTool.name:
-            if (!validatedArgs.url) {
-              throw new Error("URL is required for this tool");
-            }
-            result = await Markdownify.toMarkdown({
-              url: validatedArgs.url,
-              projectRoot: validatedArgs.projectRoot,
-              uvPath: validatedArgs.uvPath || process.env.UV_PATH,
-            });
-            break;
-
           case tools.PDFToMarkdownTool.name:
           case tools.ImageToMarkdownTool.name:
           case tools.AudioToMarkdownTool.name:
           case tools.DocxToMarkdownTool.name:
           case tools.XlsxToMarkdownTool.name:
           case tools.PptxToMarkdownTool.name:
-            if (!validatedArgs.filepath) {
+            if (!validatedArgs.url) {
               throw new Error("File path is required for this tool");
             }
             result = await Markdownify.toMarkdown({
-              filePath: validatedArgs.filepath,
+              url: validatedArgs.url,
               projectRoot: validatedArgs.projectRoot,
               uvPath: validatedArgs.uvPath || process.env.UV_PATH,
             });

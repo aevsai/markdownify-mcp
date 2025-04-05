@@ -20,23 +20,18 @@ Markdownify is a Model Context Protocol (MCP) server that converts various file 
 - Retrieve existing Markdown files
 
 ## Getting Started
+Python 3.11 with uv and Node.js 18.x or higher are required to run this server.
+- Node.js 18.x or higher
+- Python 3.11 or higher
 
-1. Clone this repository
-2. Install dependencies:
-   ```
-   pnpm install
-   ```
+```bash
+install
+# install
+pnpm add mcp-markdownify-server-url
 
-Note: this will also install `uv` and related Python depdencies.
-
-3. Build the project:
-   ```
-   pnpm run build
-   ```
-4. Start the server:
-   ```
-   pnpm start
-   ```
+# run
+npx -y mcp-markdownify-server-url
+```
 
 ## Development
 
