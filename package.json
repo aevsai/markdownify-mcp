@@ -1,5 +1,5 @@
 {
-  "name": "@aevsai/mcp-markdownify-server",
+  "name": "mcp-markdownify-server-url",
   "version": "0.0.1",
   "description": "MCP Markdownify Server - Model Context Protocol Server for Converting Almost Anything to Markdown",
   "license": "MIT",
