@@ -22,12 +22,12 @@ export const PDFToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the PDF file to convert",
+        description: "URL of the PDF file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
@@ -68,12 +68,12 @@ export const ImageToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the image file to convert",
+        description: "URL of the image file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
@@ -84,12 +84,12 @@ export const AudioToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the audio file to convert",
+        description: "URL of the audio file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
@@ -99,12 +99,12 @@ export const DocxToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the DOCX file to convert",
+        description: "URL of the DOCX file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
@@ -114,12 +114,12 @@ export const XlsxToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the XLSX file to convert",
+        description: "URL of the XLSX file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
@@ -129,26 +129,26 @@ export const PptxToMarkdownTool = ToolSchema.parse({
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path of the PPTX file to convert",
+        description: "URL of the PPTX file to convert",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
 
 export const GetMarkdownFileTool = ToolSchema.parse({
   name: "get-markdown-file",
-  description: "Get a markdown file by absolute file path",
+  description: "Get a markdown file by URL",
   inputSchema: {
     type: "object",
     properties: {
-      filepath: {
+      url: {
         type: "string",
-        description: "Absolute path to file of markdown'd text",
+        description: "URL of the markdown file to get",
       },
     },
-    required: ["filepath"],
+    required: ["url"],
   },
 });
