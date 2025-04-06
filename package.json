@@ -1,9 +1,9 @@
 {
   "name": "mcp-markdownify-server-url",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "MCP Markdownify Server (URL) - Model Context Protocol Server for Converting Almost Anything to Markdown. This fork changes tools signatures to use URLs instead of file paths.",
   "license": "MIT",
-  "author": "@zcaceres (@zachcaceres | zach.dev)",
+  "author": "",
   "homepage": "https://github.com/aevsai/mcp-markdownify-server",
   "bugs": "https://github.com/aevsai/mcp-markdownify-server/issues",
   "type": "module",
@@ -19,7 +19,7 @@
     "build": "tsc && shx chmod +x dist/*.js",
     "prepare": "npm run build",
     "dev": "tsc --watch",
-    "postinstall": "uv pip install markitdown>=0.0.1a3",
+    "postinstall": "uv tool install markitdown>=0.0.1a3",
     "start": "node dist/index.js",
     "test": "bun test",
     "test:watch": "bun test --watch"
